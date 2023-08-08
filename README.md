@@ -9,3 +9,5 @@ alex wuz herez again
 What do you call a computer with a fantastic singing voice?
 
 ---> A Dell 
+
+¯\_(ツ)_/¯ Here is my emoji :D 
