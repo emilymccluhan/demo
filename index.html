@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Word binary</h1>
+    <div id="card">
+      <h1 id="Output"></h1>
+    </div>
+
+    <label for="word">Text</label>
+    <input type="text" name="binaryText" id="word" />
+    <script>
+      const textInput = document.querySelector("input#word");
+      const output = document.querySelector("h1#Output");
+      let key = null;
+
+      function convertToBinary(n) {
+        outputToScreen(n.toString(2));
+      }
+
+      function outputToScreen(binary) {
+        const breakEl = document.createElement("br");
+        output.append(`${key} | keyCode: ${key.charCodeAt()}: ${binary}\n`);
+
+        output.appendChild(breakEl);
+      }
+
+      textInput.addEventListener("keydown", (e) => {
+        e.stopPropagation();
+        console.log(e.key);
+        key = null;
+        key = e.key;
+        convertToBinary(String(e.key).charCodeAt());
+      });
+    </script>
+  </body>
+</html>

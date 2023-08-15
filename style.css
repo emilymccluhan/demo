@@ -1,0 +1,17 @@
+body,
+div {
+  padding: 0;
+  margin: 0;
+}
+
+div#container {
+  border: 10px solid red;
+}
+
+div {
+  border: 2px solid blue;
+}
+
+div.inside {
+  display: inline-block;
+}
