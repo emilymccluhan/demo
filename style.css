@@ -1,17 +1,56 @@
-body,
-div {
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
 }
 
-div#container {
-  border: 10px solid red;
-}
-
-div {
-  border: 2px solid blue;
-}
-
-div.inside {
+nav div {
   display: inline-block;
+  padding: 10px 20px;
+  background-color: grey;
+}
+
+nav {
+  background-color: lightgray;
+}
+
+div#left {
+  float: left;
+  width: 29%;
+  height: 100vh;
+  border: 2px solid green;
+}
+
+div#left div {
+  text-align: center;
+}
+
+div#left div img {
+  width: 150px;
+}
+
+div#right div img {
+  width: 150px;
+  float: left;
+}
+
+div#right {
+  float: right;
+  width: 70%;
+  border: 2px solid red;
+  height: 100vh;
+}
+
+div#right div {
+  padding: 25px;
+}
+
+div div#favPics {
+  text-align: center;
+  border: 2px solid black;
+}
+
+div div#favPics img {
+  display: inline-block;
+  width: 150px;
+  float: inherit;
 }
